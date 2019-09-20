@@ -1,0 +1,136 @@
+.footer {
+	font-weight: bold;
+	font-size: 14.4px;
+	line-height: 150%;
+	color: #152032;
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+	
+
+	&__form {
+		display: flex;
+		flex-direction: column;
+		width: 41vw;
+		margin-top: 94px;
+
+		> label {
+			margin-top: 48px;
+		}
+	}
+
+	&__input {
+		width: 100%;
+		font-size: 20px;
+		border: none;
+		background-color: #E5E5E5;
+		border-bottom: 1px solid black;
+		height: 48px;
+
+		&::placeholder {
+			font-weight: bold;
+			font-size: 14.4px;
+			line-height: 150%;
+			color: #152032;
+		}
+	}
+
+	&__button {
+		font-weight: bold;
+		line-height: 150%;
+		text-align: center;
+		letter-spacing: 1px;
+		color: #FFFFFF;
+		background: #2F80ED;
+		border-radius: 64px;
+		width: 226px;
+		height: 56px;
+		border: none;
+		margin: 105px 0 136px;
+	}
+
+	&__contact {
+		max-width: 362px;
+	}
+
+	&__phone, &__adress {
+		font-weight: 900;
+		font-size: 24px;
+		line-height: 150%;
+		letter-spacing: 2px;
+		text-transform: uppercase;
+		color: #56CCF2;
+		text-decoration: none;
+
+		&_text {
+			font-weight: 800;
+			font-size: 12.6px;
+			letter-spacing: 2px;
+			color: #334563;
+		}
+	}
+
+	&__adress {
+		display: block;
+		margin: 41px 0 53px;
+	}
+
+	&__social-media {
+		> a {
+			margin-right: 48px;
+		}
+	}
+
+	&__bottom {
+		width: 95vw;
+		display: flex;
+		justify-content: space-evenly;
+	}
+
+	&__design-by {
+		width: 28.7vw;
+		font-weight: bold;
+		line-height: 150%;
+		color: #253757;
+	}
+
+	&__nav {
+		margin-bottom: 83px;
+		width: 34.8vw;
+	}
+
+	.menu {
+		&__items {
+			margin: 0;
+		}
+
+		&__links {
+			color: #253757;
+
+			&:hover {
+				color: #253797;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 999px) {
+	.footer {
+		flex-direction: column;
+		align-items: center;
+
+		&__form {
+			width: 60vw;
+		}
+
+		&__nav {
+			display: none;
+		}
+
+		&__design-by {
+			margin: 100px 0 5px;
+			width: 95vw;
+		}
+	}
+}
+
