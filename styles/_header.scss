@@ -2,16 +2,15 @@
 	height: 750px;
 	background-color: #56CCF2;
 	color: white;
+	overflow: hidden;
 
 	&::after {
 		content: '';
 		display: block;
-		position: absolute;
-		right: -75vw;
 		height: 45vw;
 		width: 130vw;
 		background-color: #e5e5e5;
-		transform: rotate(-65.1deg);
+		transform: translate(45vw, 0) rotate(-65.1deg);
 	}
 
 	&__content {
@@ -20,6 +19,7 @@
 		left: 14.2vw;
 		width: 59vw;
 		z-index: 2;
+		max-width: 1300px;
 	}
 
 	&__nav {

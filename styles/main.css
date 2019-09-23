@@ -20,18 +20,17 @@ h2, h3 {
   height: 750px;
   background-color: #56CCF2;
   color: white;
+  overflow: hidden;
 }
 
 .header::after {
   content: '';
   display: block;
-  position: absolute;
-  right: -75vw;
   height: 45vw;
   width: 130vw;
   background-color: #e5e5e5;
-  -webkit-transform: rotate(-65.1deg);
-          transform: rotate(-65.1deg);
+  -webkit-transform: translate(45vw, 0) rotate(-65.1deg);
+          transform: translate(45vw, 0) rotate(-65.1deg);
 }
 
 .header__content {
@@ -40,6 +39,7 @@ h2, h3 {
   left: 14.2vw;
   width: 59vw;
   z-index: 2;
+  max-width: 1300px;
 }
 
 .header__nav {
@@ -276,7 +276,7 @@ h2, h3 {
   font-weight: 900;
   font-size: 32px;
   line-height: 140%;
-  margin-bottom: 4vw;
+  margin-bottom: 64px;
 }
 
 .welcome {
@@ -326,7 +326,7 @@ h2, h3 {
 
 .our-business__content {
   width: 83vw;
-  max-width: 1200px;
+  max-width: 1600px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -381,13 +381,15 @@ h2, h3 {
 }
 
 .process {
-  position: relative;
   padding: 0 4vw;
   background-color: #fff;
 }
 
 .process__content {
-  padding: 110px 10vw;
+  position: relative;
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 110px 160px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background-color: #E5E5E5;
@@ -396,6 +398,7 @@ h2, h3 {
 
 .article {
   width: 29vw;
+  max-width: 500px;
 }
 
 .article__text {
@@ -407,7 +410,7 @@ h2, h3 {
 .cubes {
   position: absolute;
   top: 224.55px;
-  right: 8vw;
+  right: 4vw;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 240px 240px;
@@ -538,7 +541,7 @@ h2, h3 {
   display: block;
   position: absolute;
   left: -120px;
-  width: 56vw;
+  width: 66vw;
   height: 1500px;
   z-index: -1;
   -webkit-transform: rotate(15deg);
