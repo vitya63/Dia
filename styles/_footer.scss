@@ -27,6 +27,10 @@
 		border-bottom: 1px solid black;
 		height: 48px;
 
+		&:focus {
+			outline: none;
+		}
+
 		&::placeholder {
 			font-weight: bold;
 			font-size: 14.4px;
@@ -48,6 +52,10 @@
 		border: none;
 		margin: 105px 0 136px;
 		cursor: pointer;
+
+		&:hover {
+			background: #4f80ed;
+		}
 	}
 
 	&__contact {
